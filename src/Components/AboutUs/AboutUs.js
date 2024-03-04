@@ -2,24 +2,30 @@ import React from 'react';
 import { Grid, Typography } from '@mui/material';
 import { WhatsApp, Facebook, Mail, Instagram, LinkedIn, Twitter } from '@mui/icons-material';
 
+function CustomTypography({ children, variant, style }) {
+    return (
+        <Typography variant={variant} style={{
+            fontFamily: 'Helvetica',
+            textAlign: 'left',
+            textDecoration: 'none',
+            color: '#000001',
+            ...style
+        }}>
+            {children}
+        </Typography>
+    );
+}
 
 function AboutUs() {
     return (
         <div className='mt-5'>
-            
             <div className='px-3'>
-                
-                <Typography variant="h1" className='mt-3 p-2 px-3' style={{
-                    fontFamily: 'Helvetica',
-                    textAlign: 'left',
-                    textDecoration: 'none',
-                    color: '#1c226b',
-                    fontSize: '48px',
-                    fontWeight: 'bold',
-                    lineHeight: '1.3',
-                }}>
-                    <b><i>Resume Builder</i></b>
-                </Typography>
+                <CustomTypography variant="h1" style={{ fontSize: '48px', fontWeight: 'bold', lineHeight: '1.3' }}>
+                    <b><i>Resume </i></b>
+                </CustomTypography>
+                <CustomTypography variant="h1" style={{ fontSize: '48px', fontWeight: 'bold', lineHeight: '1.3' }}>
+                    <b><i>Builder</i></b>
+                </CustomTypography>
             </div>
             <div>
                 {/* Left side content */}
@@ -30,14 +36,15 @@ function AboutUs() {
                             textAlign: 'justify',
                             textJustify: 'inter-word'
                         }}>
-                            <Typography variant="body1">
-                                A vibrant selection of eye-catching and professional resume
-                                and cover letter premium templates from Office help you
-                                stand out from other applicants and leave a lasting impression.
-                                We have some of the best resume templates for job seekers in almost every field.
-                                Our templates are professionally designed, employer-ready,
-                                ATS-friendly and easy to customize. Choose from dozens of free resume templates,
-                                then use our Resume Builder to create a professional resume in minutes.
+                            <Typography variant="body1" align="justify">
+                                Stand out from the crowd with our vibrant selection of professional resume 
+                                and cover letter templates. Our premium templates, designed specifically for 
+                                modern job seekers, are guaranteed to leave a lasting impression on employers. 
+                                Whether you're in tech, finance, or any other field, we've got you covered. 
+                                Our templates are not only visually appealing but also ATS-friendly and easy to 
+                                customize to suit your unique style. With dozens of free templates to choose from, 
+                                creating a professional resume has never been easier. 
+                                Try our Resume Builder today and create your standout resume in minutes.
                             </Typography>
                         </div>
                     </Grid>
@@ -51,9 +58,9 @@ function AboutUs() {
             <div className='mt-5 px-3'>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
-                        <Typography variant="h3" className='px-4' style={{ wordSpacing: "5px", letterSpacing: "1px" }}>
+                        <CustomTypography variant="h3" style={{ wordSpacing: "5px", letterSpacing: "1px" }}>
                             Share with your friends.
-                        </Typography>
+                        </CustomTypography>
                         <div style={{ display: 'flex', background: '#faf8f8' }}>
                             <div className='ms-5 p-2'>
                                 <WhatsApp fontSize="large" style={{ color: "green" }} />
@@ -70,7 +77,6 @@ function AboutUs() {
                             <div className='p-2 ms-4'>
                                 <LinkedIn fontSize="large" style={{ color: "#0077B5" }} />
                             </div>
-                            
                             <div className='p-2 ms-4'>
                                 <Twitter fontSize="large" style={{ color: "#1DA1F2" }} />
                             </div>

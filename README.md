@@ -15,8 +15,8 @@ The Resume Builder App is a frontend web application designed to help users crea
 
 ## Folder Structure
 
-# public
-* [index.html](.\public\index.html)
+# public1
+* [index.html](.\public1\index.html)
 # src
 
 * [Components/](.\src\Components)
@@ -46,6 +46,7 @@ The Resume Builder App is a frontend web application designed to help users crea
         * [TextField.js](.\src\Components\InputComponents\TextField.js)
     * [Navigation](.\src\Components\Navigation)
         * [Navbar.js](.\src\Components\Navigation\Navbar.js)
+        * [DrawerComp.js](.\src\Components\Navigation\DrawerComp.js)
     * [ResumeDisplay](.\src\Components\ResumeDisplay)
         * [Modal.js](.\src\Components\ResumeDisplay\Modal.js)
         * [MyResume.js](.\src\Components\ResumeDisplay\MyResume.js)
@@ -83,7 +84,7 @@ Follow these instructions to set up and run the project on your local machine.:
 1. **Clone the Repository**: Clone this repository to your local machine.
 
    bash
-   [https://github.com/your-username/resume-builder-app.git](https://github.com/HACSPACE/Resume_Builder_Project_AlmaX.git)
+   [https://github.com/your-username/resume-builder-app.git](https://github.com/HACSPACE/Resume_Builder_Project.git)
 
 2. **Installation**: Navigate to the project directory and install the required dependencies.
 
@@ -98,12 +99,13 @@ npm install
 
 - **Editing a Resume**: You can edit or update Created Resume, from preview section.
 
-- **Downloading a Resume**: Once you're satisfied with your resume, use save options to export it in PDF format.
+- **Downloading a Resume**: Once you're satisfied with your resume, use the download options to export it in PDF format.
 
 ## Contributing
 
 - **Rahul Singh ([GitHub Profile](https://github.com/HACSPACE))**
 
+
 -**Thank you for choosing our Resume Builder Website.**
 
-# # Resume_Builder_Project_AlmaX
+# Resume_Builder_Project
