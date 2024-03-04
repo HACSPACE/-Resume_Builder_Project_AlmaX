@@ -1,34 +1,32 @@
-import React from 'react'
-import {CheckCircleFill} from 'react-bootstrap-icons'
+import React from 'react';
+import Dialog from '@mui/material/Dialog'; 
+import DialogTitle from '@mui/material/DialogTitle'; 
+// import DialogContent from '@mui/material/DialogContent'; 
+import DialogActions from '@mui/material/DialogActions';
+import Button from '@mui/material/Button';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+ 
 
 function SuccessMessage(props) {
-
-//The Modal Component displays the modal popup on the screen with the message 'Your resume has been successfully downloaded' , when the user clicks on the Save resume button and downloads it successfully on the user's computer//
+  // Rendering the modal using Dialog component
   return (
-    <div >
-        <div className={(props.showModal) ? 'modal block d-flex align-items-center' :'modal'} >
-            <div className="modal-dialog ">
-                <div className="modal-content">
-                    <div className="modal-header">
-                        <h5 className="modal-title " style={{color:"blue",padding:"3px 170px"}}><CheckCircleFill/></h5>
-                        
-                    </div>
-                    <div className="modal-body">
-                        <p style={{color:"blue",padding:"5px",fontSize:"18px"}}>Your Resume has been successfully downloaded!!</p>
-                    </div>
-                    <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" 
-                            onClick={()=>{props.setShowModal(false)}}
-                        >
-                            Close
-                        </button>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  )
+    <Dialog open={props.showModal} onClose={() => props.setShowModal(false)}> 
+    {/* Setting open prop to control the visibility of the modal */}
+      <DialogTitle>
+        {/* Rendering CheckCircleFillIcon component with blue color */}
+        <CheckCircleIcon style={{ color: "blue", marginRight: "8px" }} /> 
+         {/* Modal title */}
+        Your Resume has been successfully downloaded!!
+        
+      </DialogTitle>
+      
+      <DialogActions>
+        <Button onClick={() => props.setShowModal(false)} color="secondary"> {/* Close button with onClick event handler to close the modal */}
+          Close 
+        </Button>
+      </DialogActions>
+    </Dialog>
+  );
 }
 
-export default SuccessMessage
+export default SuccessMessage;
