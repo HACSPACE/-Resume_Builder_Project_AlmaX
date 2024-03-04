@@ -68,7 +68,7 @@ function Template1() {
         <Box>
           <CircleAvatar src={dataStore.imageFile} alt="profile-pic" />
         </Box>
-        <Box mt={4}>
+        <Box mt={2}>
           <CustomTypography variant="h3" sx={{ color: '#000001', fontFamily: 'Oswald', fontWeight:'Bold', fontStyle:'Bold', fontSize: '25px' }}>
             {`${dataStore.personalInfo.firstName} ${dataStore.personalInfo.lastName}`}
           </CustomTypography>
@@ -76,13 +76,13 @@ function Template1() {
             {dataStore.workEx[dataStore.workEx.length - 1].title}
           </CustomTypography>
         </Box>
-        <Box mt={4}>
+        <Box mt={2}>
           <CustomTypography variant="body1" align="justify" sx={{ color: '#000001', fontFamily: 'Droid Serif', fontWeight: 'normal',  fontStyle: 'Regular' }}>
             {dataStore.personalInfo.Objective}
           </CustomTypography>
         </Box>
         <Box style={{ fontSize: '18px' }}>
-          <Box mt={4}>
+          <Box mt={2}>
             <CustomTypography variant='h4' sx={{ color: '#000001', fontFamily: 'Oswald', fontWeight:'Bold', fontStyle:'Bold', fontSize: '25px' }}>
               Contact
             </CustomTypography>
@@ -112,7 +112,7 @@ function Template1() {
           ))}
         </Box>
         
-        <Box mt={25}>
+        <Box mt={2}>
           <CustomTypography variant="h4" sx={{ color: '#000001', fontFamily: 'Oswald', fontWeight:'Bold', fontStyle:'Bold', fontSize: '25px' }}>
             Education
           </CustomTypography>
