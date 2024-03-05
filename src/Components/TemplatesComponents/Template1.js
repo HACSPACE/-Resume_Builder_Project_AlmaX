@@ -26,7 +26,7 @@ const LeftSide = styled(Box)(({ theme }) => ({
 const RightSide = styled(Box)(({ theme }) => ({
   backgroundColor: '#F8E7DD',
   flex: '3',
-  padding: theme.spacing(4),
+  padding: theme.spacing(2),
   [theme.breakpoints.down('sm')]: {
     flex: '2',
   },

@@ -20,8 +20,8 @@ const StyledBox = styled(Box)(({ theme }) => ({
 
 const LeftSide = styled(Box)(({ theme }) => ({
   backgroundColor: '#B39E9F',
-  flex: '2',
-  padding: theme.spacing(4),
+  flex: '1',
+  padding: theme.spacing(2),
   [theme.breakpoints.down('sm')]: {
     flex: '1',
   },
@@ -30,10 +30,10 @@ const LeftSide = styled(Box)(({ theme }) => ({
 // Define styled components for the left and right sides of the container
 const RightSide = styled(Box)(({ theme }) => ({
   backgroundColor: '#ffffff',
-  flex: '3',
+  flex: '2',
   padding: theme.spacing(0),
   [theme.breakpoints.down('sm')]: {
-    flex: '2',
+    flex: '1',
   },
 }));
 

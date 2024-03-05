@@ -20,8 +20,8 @@ const StyledBox = styled(Box)(({ theme }) => ({
 // Define styled components for the left and right sides of the container
 const LeftSide = styled(Box)(({ theme }) => ({
   backgroundColor: '#F4F4F4',
-  flex: '2',
-  padding: theme.spacing(4),
+  flex: '1',
+  padding: theme.spacing(2),
   [theme.breakpoints.down('sm')]: {
     flex: '1',
   },
@@ -29,10 +29,10 @@ const LeftSide = styled(Box)(({ theme }) => ({
 
 const RightSide = styled(Box)(({ theme }) => ({
   backgroundColor: '#ffffff',
-  flex: '3',
-  padding: theme.spacing(4),
+  flex: '2',
+  padding: theme.spacing(2),
   [theme.breakpoints.down('sm')]: {
-    flex: '2',
+    flex: '1',
   },
 }));
 
@@ -148,7 +148,7 @@ function Template2() {
             {dataStore.personalInfo.Objective}
           </CustomTypography>
         </Box>
-        <Box mt={2} bgcolor='#444440' display="flex" justifyContent="center">
+        <Box mt={2} bgcolor='#444440' display="flex" justifyContent="left">
           {/* Work Experience section */}
           <CustomTypography variant="h4" sx={{ color:'#ffffff', fontFamily: 'Oswald', fontWeight:'Bold', fontStyle:'Bold', fontSize: '25px' }}>
             Work Experience
