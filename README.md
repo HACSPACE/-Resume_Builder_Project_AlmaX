@@ -95,7 +95,7 @@ npm install
 
 ## Usage
 
-- **Creating a Resume**: Choose a template, Click the "USE TEMPLATE" button to begin building your resume. Fill in your details, and customize your resume content.
+- **Creating a Resume**: Choose a template, Click the "Use Template" button to begin building your resume. Fill in your details, and customize your resume content.
 
 - **Editing a Resume**: You can edit or update Created Resume, from preview section.
 
