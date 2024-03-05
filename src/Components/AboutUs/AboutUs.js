@@ -20,7 +20,7 @@ function CustomTypography({ children, variant, style }) {
 
 function AboutUs() {
     return (
-        <div className='mt-5'>
+        <div className='mt-3'>
             <div className='px-3'>
                 <CustomTypography variant="h1" style={{ fontSize: '48px', fontWeight: 'bold', lineHeight: '1.3' }}>
                     <b><i>Resume </i></b>
