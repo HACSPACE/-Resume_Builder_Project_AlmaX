@@ -55,7 +55,7 @@ function AboutUs() {
                 </Grid>
             </div>
             {/* Share with your friends section */}
-            <div className='mt-5 px-3'>
+            <div className='mt-3 px-3'>
                 <Grid container spacing={2}>
                     <Grid item xs={12}>
                         <CustomTypography variant="h3" style={{ wordSpacing: "5px", letterSpacing: "1px" }}>
