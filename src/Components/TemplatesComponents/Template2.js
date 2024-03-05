@@ -10,7 +10,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 // Styled components for custom styling using Material-UI's styled API
 const StyledBox = styled(Box)(({ theme }) => ({
-  backgroundColor: '#ffffff',
+  
   display: 'flex',
   flexDirection: 'row',
   width: '100%',
@@ -28,6 +28,7 @@ const LeftSide = styled(Box)(({ theme }) => ({
 }));
 
 const RightSide = styled(Box)(({ theme }) => ({
+  backgroundColor: '#ffffff',
   flex: '3',
   padding: theme.spacing(4),
   [theme.breakpoints.down('sm')]: {
@@ -41,6 +42,7 @@ const CircleAvatar = styled(Avatar)(({ theme }) => ({
   height: theme.spacing(20),
   marginRight: theme.spacing(4),
   borderRadius: '50%',
+  border: '10px solid #ffffff',
   [theme.breakpoints.down('sm')]: {
     width: theme.spacing(16),
     height: theme.spacing(16),

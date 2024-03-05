@@ -44,6 +44,7 @@ const CircleAvatar = styled(Avatar)(({ theme }) => ({
   height: theme.spacing(20),
   marginRight: theme.spacing(4),
   borderRadius: '50%',
+  border: '2px solid #ffffff',
   [theme.breakpoints.down('sm')]: {
     width: theme.spacing(16),
     height: theme.spacing(16),
