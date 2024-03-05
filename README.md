@@ -15,8 +15,8 @@ The Resume Builder App is a frontend web application designed to help users crea
 
 ## Folder Structure
 
-# public1
-* [index.html](.\public1\index.html)
+# public
+* [index.html](.\public\index.html)
 # src
 
 * [Components/](.\src\Components)
