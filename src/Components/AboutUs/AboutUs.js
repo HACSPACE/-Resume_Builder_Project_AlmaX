@@ -1,6 +1,8 @@
 import React from 'react';
 import { Grid, Typography } from '@mui/material';
 import { WhatsApp, Facebook, Mail, Instagram, LinkedIn, Twitter } from '@mui/icons-material';
+import BlueLines from "../Data/images/BlueBrush.png"
+
 
 function CustomTypography({ children, variant, style }) {
     return (
@@ -26,6 +28,8 @@ function AboutUs() {
                 <CustomTypography variant="h1" style={{ fontSize: '48px', fontWeight: 'bold', lineHeight: '1.3' }}>
                     <b><i>Builder</i></b>
                 </CustomTypography>
+                <img style={{ width: "20%", height: "20px" }} src={BlueLines} alt="BlueLineDevider" />
+
             </div>
             <div>
                 {/* Left side content */}
