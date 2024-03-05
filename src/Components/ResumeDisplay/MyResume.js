@@ -64,12 +64,12 @@ function MyResume() {
     <Grid container spacing={3} className="container">
       <Grid item xs={12} md={6}>
         {/* Resume Preview section */}
-        <Typography variant="h3" sx={{ color:'#000001', fontFamily: 'Oswald', fontWeight: 'normal', fontSize: '37', fontStyle: 'regular' }}>
+        <Typography variant="h4" sx={{ color:'#000001', fontFamily: 'Oswald', fontWeight: 'normal', fontSize: '37', fontStyle: 'regular' }}>
                 Resume Preview</Typography>
         <Paper id='divToPrint' elevation={3} style={{ width: '100%', height: '100%' }}>
           {/* Render selected template */}
           {selectedTemplate === ""
-            ? <Typography variant="h4" sx={{ color:'#000001', fontFamily: 'Oswald', fontWeight: 'normal', fontSize: '37', fontStyle: 'regular' }}>
+            ? <Typography variant="h5" sx={{ color:'#000001', fontFamily: 'Oswald', fontWeight: 'normal', fontSize: '37', fontStyle: 'regular' }}>
                 Please select a template!</Typography>
             : selectedTemplate === "Template 1"
               ? <Template1 />
