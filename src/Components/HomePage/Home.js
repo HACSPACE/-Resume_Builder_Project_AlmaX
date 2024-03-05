@@ -43,11 +43,12 @@ function Home() {
 					sx={{
 						fontSize: "30px",
 						fontWeight: "bold",
+                        fontFamily: 'Oswald'
 						
 					}}>
 					TEMPLATES
 				</Typography>
-            <Typography sx={{ color: "", justifyContent: { xs: "center" } }}>
+            <Typography sx={{ color: "", justifyContent: { xs: "center" }, fontFamily: 'Oswald' , fontSize: '20px'}}>
 					Select Template To Get Started
 				</Typography>
             <div className="template-container">
