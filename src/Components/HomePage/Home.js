@@ -38,7 +38,7 @@ function Home() {
     
  // Rendering the component
     return (
-        <div className="home-container">
+        <div className="home-container" style={{ marginTop: '56px' }}>
             <Typography
 					sx={{
 						fontSize: "30px",

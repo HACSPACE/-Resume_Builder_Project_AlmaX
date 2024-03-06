@@ -35,8 +35,8 @@ function PersonalInfo(props) {
 
     // Rendering the component
     return (
-        <Container sx={{ display: { md: "flex" }, mt: "20px" }}>
-            <Box style={{ padding: "15px", textAlign: "left", border: "1px solid #ccc", borderRadius: "8px", boxShadow: "0 0px 20px 2px #000000" }}>
+        <Container sx={{ display: { md: "flex" }, mt: "50px" }}>
+            <Box style={{ padding: "10px", textAlign: "left", border: "1px solid #ccc", borderRadius: "8px", boxShadow: "0 0px 20px 2px #000000" }}>
 
                 {/* Profile picture upload component */}
                 <Box>

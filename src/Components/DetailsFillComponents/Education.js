@@ -53,7 +53,7 @@ function Education(props) {
     // Rendering component
     return (
         <Container >
-            <Box style={{ padding: "15px", textAlign: "left", border: "1px solid #ccc", borderRadius: "8px", boxShadow: "0 0px 20px 2px #000000" }}>
+            <Box style={{ display: { md: "flex" },marginTop: '50px', padding: "15px", textAlign: "left", border: "1px solid #ccc", borderRadius: "8px", boxShadow: "0 0px 20px 2px #000000" }}>
                 <Typography variant="h5">Education Details</Typography>
                 <hr />
                 {educationHeads.map((educationHeading, index) => (

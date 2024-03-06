@@ -37,8 +37,8 @@ function App() {
             <Box className="row" sx={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start', marginBottom: 1 }}>
                 <Avatar
                     sx={{
-                        width: 150,
-                        height: 150,
+                        width: 100,
+                        height: 100,
                         marginRight: 1,
                         borderRadius: '50%', // Apply border radius for rounded Avatar
                     }}
@@ -46,7 +46,7 @@ function App() {
                     src={imageFile || defaultProfile} // Set the source of the Avatar component to the selected image file or default profile image
                 />
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-                    <Typography variant="body1" component="label" htmlFor="fileInput" sx={{ cursor: 'pointer', color: 'blue', marginBottom: 1 }}>
+                    <Typography variant="body1" component="label" htmlFor="fileInput" sx={{ cursor: 'pointer', color: 'blue', marginBottom: 1, fontSize:'14px' }}>
                         Change Profile Photo
                     </Typography>
                     <Input

@@ -110,7 +110,7 @@ function DetailsFillingPage(props) {
     <div>
 
       {/* Container for the page layout */}
-      <Container sx={{ display: { md: "flex" }, mt: "20px" }}>
+      <Container sx={{ display: { md: "flex" }, mt: "60px" }}>
         <Box>
 
           {/* Side navigation */}
