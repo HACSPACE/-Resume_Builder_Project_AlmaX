@@ -3,18 +3,27 @@ import { Drawer, IconButton, ListItemButton,
  Tab, Typography, Divider, List}
  from "@mui/material";
 import { NavLink, useLocation } from 'react-router-dom';
-
+import { useSelector } from 'react-redux';
 import React, { useState, useEffect } from 'react';
-// import { Link } from "react-router-dom";
+
 
 // Menu of Navbar for Mobile Width
 
 const DrawerComp = () => {
     const [openDrawer, setopenDrawer] = useState(false);
-    // const [selectedIndex, serSelectedIndex] = useState(0);
     const location = useLocation();
     // Set default active tab to "Resume Templates"
     const [activeTab, setActiveTab] = useState('resumeTemplates'); 
+
+    let [isFormValid] = useState(true); // State to track form fill status
+    const errorMessages = useSelector(state => state.dataStore.errorMessages);
+
+    for (let key in errorMessages) {
+        if (errorMessages[key] !== "") {
+          isFormValid = false;
+          break;
+        }
+    }
 
     useEffect(() => {
         // Extract the route name from the location path
@@ -41,27 +50,30 @@ const DrawerComp = () => {
                     <ListItemButton>
 
                         <Tab
-                            sx={{ color: activeTab === 'resumeTemplates' ? "blue" : "black", fontWeight: activeTab === 'resumeTemplates' ? "bold" : "normal" }}
+                            sx={{ color: !isFormValid ? "gray" : (activeTab === 'resumeTemplates' ? "blue" : "black"), fontWeight: activeTab === 'resumeTemplates' ? "bold" : "normal" }}
                             component={NavLink}
                             exact
                             to={"/"}
                             label="Resume Templates"
-                        />
-                    </ListItemButton>
-                        <ListItemButton>
-                        <Tab
-                        sx={{ color: activeTab === 'myresume' ? "blue" : "black", fontWeight: activeTab === 'myresume' ? "bold" : "normal" }}
-                        component={NavLink}
-                        to={"/myresume"}
-                        label="My Resumes"
+                            disabled={!isFormValid}
                         />
                     </ListItemButton>
                     <ListItemButton>
                         <Tab
-                        sx={{ color: activeTab === 'about' ? "blue" : "black", fontWeight: activeTab === 'about' ? "bold" : "normal" }}
-                        component={NavLink}
-                        to={"/about"}
-                        label="About Us"
+                            sx={{ color: !isFormValid ? "gray" : (activeTab === 'myresume' ? "blue" : "black"), fontWeight: activeTab === 'myresume' ? "bold" : "normal" }}
+                            component={NavLink}
+                            to={"/myresume"}
+                            label="My Resumes"
+                            disabled={!isFormValid}
+                        />
+                    </ListItemButton>
+                    <ListItemButton>
+                        <Tab
+                            sx={{ color: !isFormValid ? "gray" : (activeTab === 'about' ? "blue" : "black"), fontWeight: activeTab === 'about' ? "bold" : "normal" }}
+                            component={NavLink}
+                            to={"/about"}
+                            label="About Us"
+                            disabled={!isFormValid}
                         />
                     </ListItemButton>
 

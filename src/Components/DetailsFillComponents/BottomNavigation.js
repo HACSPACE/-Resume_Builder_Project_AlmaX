@@ -3,10 +3,11 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Button, Grid } from '@mui/material';
 import { updateState } from '../../ReduxManager/dataStoreSlice';
-
+import { useLocation } from 'react-router-dom';
 // BottomNavigation component definition
 function BottomNavigation(props) {
   const dispatch = useDispatch();
+  const location = useLocation();
 
   return (
     <div className='mt-2 px-5'>
@@ -23,6 +24,8 @@ function BottomNavigation(props) {
                 value: {}
               }));
             }}
+            disabled={location.pathname === "/detailsfillingpage/personalinfo" || !props.isFormValid } // Disable when selectedNavItem is 'PersonalInfo'
+
           >
             Back
           </Button>

@@ -1,11 +1,12 @@
 
 import React, { useState, useEffect } from 'react';
 import { NavLink, Routes, Route, useNavigate , useLocation} from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import PersonalInfo from './PersonalInfo';
 import WorkEx from './WorkEx';
 import Education from './Education';
 import KeySkills from './KeySkills';
+import { updateState } from '../../ReduxManager/dataStoreSlice';
 
 import { Box, Stack, Container, List, ListItemButton } from "@mui/material";
 import BottomNavigation from './BottomNavigation';
@@ -14,6 +15,7 @@ function DetailsFillingPage(props) {
 
   // React hooks to manage state and access routing functionality
   const location = useLocation();
+  const dispatch = useDispatch();
   const navigate = useNavigate(); // Hook to perform navigation
   const [selectedNavItem, setSelectedNavItem] = useState('PersonalInfo'); // State to keep track of selected nav item
 
@@ -80,8 +82,14 @@ function DetailsFillingPage(props) {
 
   // Function to handle clicking on side navigation links
   const onSideNavLinkClick = (itemName) => {
-    setSelectedNavItem(itemName); // Update selected nav item
-  }
+    if (!isFormValid) {
+      alert('Please fill all the necessary details correctly!');
+      dispatch(updateState({ key: 'showErrorMessages', value: true }));
+    } else {
+      setSelectedNavItem(itemName);
+      dispatch(updateState({ key: 'showErrorMessages', value: false }));
+    }
+  } 
 
   // Function to style the navigation items based on the current rout
    const getNavItemStyle = (itemName) => {
