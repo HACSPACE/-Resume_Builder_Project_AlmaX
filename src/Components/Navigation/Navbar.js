@@ -29,7 +29,7 @@ function NavBar() {
     }, [location]);
 
     return (
-        <AppBar position="fixed" sx={{ backgroundColor: "White" }}>
+        <AppBar position="static" sx={{ backgroundColor: "White" }}>
             {/* Almabetter Logo for Desktop view And Responsive */}
             <Toolbar>
                 {isMatch ?  (
