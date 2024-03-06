@@ -84,7 +84,7 @@ Follow these instructions to set up and run the project on your local machine.:
 1. **Clone the Repository**: Clone this repository to your local machine.
 
    bash
-   [https://github.com/your-username/resume-builder-app.git](https://github.com/HACSPACE/Resume_Builder_Project.git)
+   [https://github.com/your-username/resume-builder-app.git](https://github.com/HACSPACE/Resume_Builder_Project_AlmaX.git)
 
 2. **Installation**: Navigate to the project directory and install the required dependencies.
 
@@ -97,9 +97,9 @@ npm install
 
 - **Creating a Resume**: Choose a template, Click the "Use Template" button to begin building your resume. Fill in your details, and customize your resume content.
 
-- **Editing a Resume**: You can edit or update Created Resume, from preview section.
+- **Editing a Resume**: You can edit or update Created Resume, from going Back.
 
-- **Downloading a Resume**: Once you're satisfied with your resume, use the download options to export it in PDF format.
+- **Downloading a Resume**: Once you're satisfied with your resume, use the Save options to export it in PDF format.
 
 ## Contributing
 
