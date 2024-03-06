@@ -24,6 +24,7 @@ The Resume Builder App is a frontend web application designed to help users crea
         * [AboutUs.js](.\src\Components\AboutUs\About.js)
     * [Data](.\src\Components\Data)
         * [images](.\src\Components\Data\images)
+            * [BlueBrush.png](.\src\Components\Data\images\profile.png)
             * [profile.jpg](.\src\Components\Data\images\profile.jpg)
             * [temp1.png](.\src\Components\Data\images\temp1.png)
             * [temp2.png](.\src\Components\Data\images\temp2.png)
